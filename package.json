@@ -4,6 +4,10 @@
   "license": "Apache-2.0",
   "description": "Advisory design-review helper for /chat agent authoring; reads an OAS-under-review and emits design suggestions. Dispatched by agent_source_review when the OAS is non-trivial. See docs/developer/chat-agent-authoring-review.md.",
   "type": "module",
+  "files": [
+    "cinatra",
+    "skills"
+  ],
   "cinatra": {
     "apiVersion": "cinatra.ai/v1",
     "kind": "agent",
