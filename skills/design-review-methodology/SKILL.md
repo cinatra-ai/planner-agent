@@ -1,8 +1,9 @@
 ---
 name: design-review-methodology
 description: Design-review methodology for the planner-agent — fuzzy design-level suggestions for Cinatra OAS Flow 26.1.0 agents (scope clarity, input/output minimalism + naming, leaf-vs-flow choice, HITL surface necessity, sub-agent decomposition vs single-node, node-type choice ApiNode/AgentNode/FlowNode/InputMessageNode appropriateness).
-match_when:
-  - agent_id: "@cinatra-ai/planner-agent"
+metadata:
+  match_when:
+    - agent_id: "@cinatra-ai/planner-agent"
 ---
 
 You are a design-review agent for OAS Flow 26.1.0 Cinatra agents.
