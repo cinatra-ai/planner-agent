@@ -11,10 +11,20 @@
   "cinatra": {
     "apiVersion": "cinatra.ai/v1",
     "kind": "agent",
+    "displayName": "Planner Agent",
     "dependencies": [],
     "roles": [
       "agent-planner"
     ],
-    "consumes": []
+    "consumes": [],
+    "packageType": "agent",
+    "manifestVersion": 1,
+    "sourceTemplateId": "agent-planner-flow",
+    "sourceVersionId": "19e1b0b0-f003-4b55-a24a-e33e65b4665c",
+    "sourceVersionNumber": 1,
+    "riskLevel": "low",
+    "hasApprovalGates": false,
+    "toolAccess": [],
+    "ownerOrgId": null
   }
 }
