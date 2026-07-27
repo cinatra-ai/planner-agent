@@ -1,12 +1,11 @@
 {
   "name": "@cinatra-ai/planner-agent",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "license": "Apache-2.0",
   "description": "Advisory design-review helper for /chat agent authoring; reads an OAS-under-review and emits design suggestions. Dispatched by agent_source_review when the OAS is non-trivial. See docs/developer/chat-agent-authoring-review.md.",
   "type": "module",
   "files": [
-    "cinatra",
-    "skills"
+    "cinatra"
   ],
   "cinatra": {
     "apiVersion": "cinatra.ai/v1",
