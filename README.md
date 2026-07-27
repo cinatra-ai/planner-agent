@@ -6,7 +6,7 @@ An advisory design-review helper for the Cinatra agent-authoring experience. Whe
 
 **Configuration.** No credentials are needed to trigger a review; the agent is dispatched internally by the Cinatra platform when you author a non-trivial agent in /chat. The `cinatra_llm` block in the OAS selects the underlying model; this is platform-managed.
 
-**Development.** Clone this repo, run `node extension-kind-gate.mjs` to validate the manifest and README, then update `cinatra/oas.json` and `skills/design-review-methodology/SKILL.md` to change review behaviour. Findings not covered here — literal-secret scanning, untrusted MCP URL scanning, package metadata — belong to companion reviewer agents, not this one.
+**Development.** Clone this repo, run `node extension-kind-gate.mjs` to validate the manifest and README, then update `cinatra/oas.json` (the `review` node's `data.system` carries the methodology) to change review behaviour. Findings not covered here — literal-secret scanning, untrusted MCP URL scanning, package metadata — belong to companion reviewer agents, not this one.
 
 **Troubleshooting.** If the agent returns `{"findings":[{"code":"unparseable_oas",...}]}`, the `oasJson` input was not valid JSON. If findings is always empty, confirm the OAS has at least one `ApiNode` or `AgentNode` in `$referenced_components`.
 
